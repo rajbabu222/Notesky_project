@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #FD6569;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+}
+
+.container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.booksky-container {
+    padding: 15px;
+    width: 80%;
+    max-width: 300px;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    margin: 15px;
+}
+
+.booksky-container h2 {
+    color: #FD6569;
+}
+
+.booksky-container button {
+    color: black;
+    background-color: #FD6569;
+    padding: 5px 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.add-button {
+    background-color: #FD6569;
+    border-radius: 100%;
+    color: black;
+    padding: 20px 30px;
+    font-size: 40px;
+    border: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.popup-overlay {
+    background-color: black;
+    opacity: 0.8;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+
+.popup-box {
+    background-color: #FD6569;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    display: none;
+}
+
+.popup-box input,
+.popup-box textarea {
+    background: transparent;
+    border: none;
+    width: 100%;
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 16px;
+    border-bottom: 2px solid black;
+}
+
+.popup-box textarea {
+    border: 2px solid black;
+}
+
+.popup-box input::placeholder,
+.popup-box textarea::placeholder {
+    color: black;
+}
+
+.popup-box button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .add-button {
+        padding: 15px 25px;
+        font-size: 30px;
+    }
+
+    .booksky-container {
+        width: 90%;
+        margin: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .popup-box {
+        width: 95%;
+        max-width: 300px;
+    }
+
+    .add-button {
+        padding: 10px 20px;
+        font-size: 25px;
+    }
+}
